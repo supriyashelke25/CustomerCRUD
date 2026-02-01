@@ -13,7 +13,6 @@ public class Customer {
 	private String address;
 	private Float total;
 	
-	
 	public Customer() {
 		super();
 		// TODO Auto-generated constructor stub

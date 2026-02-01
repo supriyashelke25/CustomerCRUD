@@ -20,7 +20,7 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public void add(Customer customer) {
 		// TODO Auto-generated method stub
-		
+	
 		if (customer.getId() != null) {
 
 	        if (customer.getId() <= 0) {
@@ -35,7 +35,7 @@ public class CustomerServiceImpl implements CustomerService {
 		String address = customer.getAddress();
 
 		if (cr.existsByAddress(address.trim())) {
-		    throw new InvalidAddressException("Please enter unique address");
+		    throw new InvalidAddressException("Please Enter Unique Address!!!");
 		}
 
 
